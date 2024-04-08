@@ -25,7 +25,7 @@ ENV WINEPREFIX=/root/.wine
 ENV WINEARCH=win64
 ENV DISPLAY :0
 ENV USER=root
-ENV PASSWORD=root
+ENV PASSWORD=Cd360990!
 
 
 # Basic init and admin tools
