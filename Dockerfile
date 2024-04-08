@@ -1,4 +1,4 @@
-FROM alpine:3.15 AS st-builder
+FROM alpine:latest AS st-builder
 
 RUN apk add --no-cache make gcc git freetype-dev \
             fontconfig-dev musl-dev xproto libx11-dev \
@@ -7,7 +7,7 @@ RUN git clone https://github.com/DenisKramer/st.git /work
 WORKDIR /work
 RUN make
 
-FROM alpine:3.15 AS xdummy-builder
+FROM alpine:latest AS xdummy-builder
 
 RUN apk add --no-cache make gcc freetype-dev \
             fontconfig-dev musl-dev xproto libx11-dev \
