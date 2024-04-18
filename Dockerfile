@@ -26,7 +26,8 @@ ENV WINEARCH=win64
 ENV DISPLAY :0
 ENV USER=root
 ENV PASSWORD=Cd360990!
-
+ARG PW_VNC=default_pw_vnc
+ENV PW_VNC=${PW_VNC_STARTSH}
 
 # Basic init and admin tools
 RUN apk --no-cache add supervisor sudo wget \
